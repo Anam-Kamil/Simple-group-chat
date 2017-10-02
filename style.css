@@ -1,0 +1,150 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Roboto Light", "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", Helvetica, Arial, sans-serif; 
+    background: #f9f9f9;
+    color: #333;
+}
+h1, h2, h3 {
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+h1 {
+    font-size: 2em;
+    line-height: 58px;
+    text-align: center;
+    font-weight: normal;
+}
+input[type=text], button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 1em;
+    padding: .7em 1em;
+    margin-bottom: 1em;
+    display: block;
+}
+#typing-status {
+    margin: 5px 2% 0;
+    min-height: 25px;
+}
+button {
+    background: #e6e6e6;
+    text-shadow: 0 1px 0 #f3f3f3;
+    margin: 10px 2%;
+    width: 160px;
+    float: right;
+}
+#receiving-messages {
+    display: block;
+    float: left;
+    width: 96%;
+    margin: 10px 2%;
+    background: gainsboro;
+    white-space: pre-line;
+    word-break: break-word;
+}
+#chat {
+    position: relative;
+}
+#chat input {
+    position: relative;
+    width: 96%;
+    margin: 0 auto;
+}
+#main {
+    margin: 20vh auto 0;
+    width: 40vw;
+    min-width: 250px;
+}
+
+#receiving-messages div {
+    font-size: 1.2em;
+    margin: 0.6em;
+    position: relative;
+}
+#receiving-messages span:first-child {
+    font-size: smaller;
+    font-style: italic;
+    max-width: 140px;
+    overflow: hidden;
+    display: block;
+}
+#receiving-messages span.message {
+    margin: 0 0 0 10px;
+    background: rgba(255, 255, 255, 0.24);
+    padding: 0 10px;
+}
+#receiving-messages span.timestamp {
+    position: relative;
+    top: 5px;
+    font-size: small;
+    margin: 0 0 0 5px;
+    font-style: italic;
+}
+#receiving-messages span.timestamp {
+    position: relative;
+    top: 5px;
+    font-size: small;
+    margin: 0 0 0 5px;
+    font-style: italic;
+}
+#receiving-messages span.timestamp:after {
+/*     content: "ts"; */
+    padding: 0 0 0 4px;
+    font-weight: 600;
+}
+
+/* Font Icons */
+
+@font-face {
+    font-family: 'skipop';
+    src:url('../fonts/skipop.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="face"], [class*=" face"] {
+    font-family: 'skipop';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.page {
+    background: #fff;
+    width: 96%;
+    margin: 20px 2%;
+    min-height: 90vh;
+    box-shadow: 1px 1px 3px #ccc;
+    padding: 0 20px 20px;
+    display: inline-block;
+}
+h1 {
+    padding: 50px 0 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.datetime:before {
+    content: "------------------------";
+}
+
+.datetime {
+    text-align: center;
+}
+
+.datetime:after {
+    content: "------------------------";
+}
