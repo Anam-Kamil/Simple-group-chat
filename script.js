@@ -24,8 +24,8 @@ if (person == null || person == "") {
 }
 
 PubNub = new PubNub ({
-	publishKey : 'pub-c-8a0d91c5-986f-425c-a9b6-f9cceaaa79f8',
-	subscribeKey : 'sub-c-7a30f168-357d-11e7-887b-02ee2ddab7fe',
+	publishKey : 'pub-c-f68a0846-ab70-41ae-acad-59f9f2d87698',
+	subscribeKey : 'sub-c-d08b3e9c-a742-11e7-a4bf-e61ccde79053',
 	uuid: uuid
 });
 
